@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "nanomq.fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "nanomq.fullname" . }}:8083']
   restartPolicy: Never
