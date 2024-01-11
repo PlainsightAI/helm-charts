@@ -26,7 +26,11 @@ spec:
       {{- end }}
       serviceAccountName: {{ include "face-detector.serviceAccountName" . }}
       securityContext:
-        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+        privileged: true
+      volumes:
+      - name: dev-video0
+        hostPath:
+          path: /dev/video0        
       containers:
         - name: {{ .Chart.Name }}
           volumeMounts:
@@ -50,10 +54,6 @@ spec:
           #     port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          volumes:
-          - name: dev-video0
-            hostPath:
-              path: /dev/video0
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
