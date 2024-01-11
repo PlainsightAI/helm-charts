@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "face_detector.fullname" . }}
+  name: {{ include "face-detector.fullname" . }}
   labels:
-    {{- include "face_detector.labels" . | nindent 4 }}
+    {{- include "face-detector.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "face_detector.selectorLabels" . | nindent 4 }}
+    {{- include "face-detector.selectorLabels" . | nindent 4 }}
