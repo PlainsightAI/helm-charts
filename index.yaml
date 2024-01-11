@@ -1,6 +1,27 @@
 apiVersion: v1
 entries:
+  asl-parser:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-11T23:33:35.890289599Z"
+    description: A Helm chart for Kubernetes
+    digest: 439bf8e8c91214963576c1c069b672be912b9d0f9a5ce077f88b6beb3b81c344
+    name: asl-parser
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/asl-parser-0.1.0/asl-parser-0.1.0.tgz
+    version: 0.1.0
   face-blur:
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2024-01-11T23:33:35.989392497Z"
+    description: A Helm chart for Kubernetes
+    digest: 5e4a551b8930e49937c20fad2a066762e1bd27e0bce619335ba5cab34c12de06
+    name: face-blur
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/face-blur-0.6.0/face-blur-0.6.0.tgz
+    version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
     created: "2024-01-11T22:05:40.454288592Z"
@@ -42,6 +63,16 @@ entries:
     - https://github.com/PlainsightAI/helm-charts/releases/download/face-blur-0.2.0/face-blur-0.2.0.tgz
     version: 0.2.0
   face-detector:
+  - apiVersion: v2
+    appVersion: 0.13.0
+    created: "2024-01-11T23:33:36.089307062Z"
+    description: A Face Detection Filter
+    digest: 269f50f72d13bfcca25e8f25a2a2a9d9922ade7efb06022a84cdb5f98fb69ed3
+    name: face-detector
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/face-detector-0.13.0/face-detector-0.13.0.tgz
+    version: 0.13.0
   - apiVersion: v2
     appVersion: 0.12.0
     created: "2024-01-11T22:05:40.658821748Z"
@@ -165,6 +196,16 @@ entries:
     version: 0.1.0
   nanomq:
   - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2024-01-11T23:33:36.16980568Z"
+    description: A Helm chart for Kubernetes
+    digest: ed97de03a6c38a9d18d22d71ca776ce24a7c6b15077895fbbd873438a35266c8
+    name: nanomq
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.6.0/nanomq-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
     appVersion: 0.5.0
     created: "2024-01-11T22:05:40.829369179Z"
     description: A Helm chart for Kubernetes
@@ -204,4 +245,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.2.0/nanomq-0.2.0.tgz
     version: 0.2.0
-generated: "2024-01-11T22:05:40.829442586Z"
+generated: "2024-01-11T23:33:36.169884867Z"
