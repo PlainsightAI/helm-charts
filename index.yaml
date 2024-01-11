@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  face-detector:
+  - apiVersion: v2
+    appVersion: 0.4.0
+    created: "2024-01-11T02:49:09.024541751Z"
+    description: A Face Detection Filter
+    digest: b5c4c3386ab88d72caab62e547aedb07a8da1e621071bcedff470918c270c7e9
+    name: face-detector
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/face-detector-0.4.0/face-detector-0.4.0.tgz
+    version: 0.4.0
   face_detector:
   - apiVersion: v2
     appVersion: 0.3.0
@@ -31,4 +42,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/face_detector-0.1.0/face_detector-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-11T01:39:15.088127258Z"
+generated: "2024-01-11T02:49:09.024553573Z"
