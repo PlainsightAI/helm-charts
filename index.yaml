@@ -1,6 +1,27 @@
 apiVersion: v1
 entries:
+  face-blur:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2024-01-11T21:50:35.05970211Z"
+    description: A Helm chart for Kubernetes
+    digest: 476e07b72360083d6430efff9bc7f40d0e0ec6b449ffff2849d8e14d30334077
+    name: face-blur
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/face-blur-0.2.0/face-blur-0.2.0.tgz
+    version: 0.2.0
   face-detector:
+  - apiVersion: v2
+    appVersion: 0.9.0
+    created: "2024-01-11T21:50:35.164899105Z"
+    description: A Face Detection Filter
+    digest: fe75c2923e52ecb97d5195cd1d4b288cd688d10ccc4389df134d307082d2f6ab
+    name: face-detector
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/face-detector-0.9.0/face-detector-0.9.0.tgz
+    version: 0.9.0
   - apiVersion: v2
     appVersion: 0.8.0
     created: "2024-01-11T03:47:06.083003198Z"
@@ -82,4 +103,15 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/face_detector-0.1.0/face_detector-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-11T03:47:06.083028846Z"
+  nanomq:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2024-01-11T21:50:35.267323452Z"
+    description: A Helm chart for Kubernetes
+    digest: 7c977f287680dd20c981d600101b6b3cc6002da2499c300631498a0de7713ed4
+    name: nanomq
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.2.0/nanomq-0.2.0.tgz
+    version: 0.2.0
+generated: "2024-01-11T21:50:35.267360361Z"
