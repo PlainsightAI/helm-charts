@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   face-blur:
   - apiVersion: v2
+    appVersion: 0.4.0
+    created: "2024-01-11T22:01:11.220772301Z"
+    description: A Helm chart for Kubernetes
+    digest: 6f19bf322ce416ae1d4e230dde6115ae45f85421fe09149a847a0efac324a4a2
+    name: face-blur
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/face-blur-0.4.0/face-blur-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
     appVersion: 0.3.0
     created: "2024-01-11T21:56:46.24417097Z"
     description: A Helm chart for Kubernetes
@@ -22,6 +32,16 @@ entries:
     - https://github.com/PlainsightAI/helm-charts/releases/download/face-blur-0.2.0/face-blur-0.2.0.tgz
     version: 0.2.0
   face-detector:
+  - apiVersion: v2
+    appVersion: 0.11.0
+    created: "2024-01-11T22:01:11.4049064Z"
+    description: A Face Detection Filter
+    digest: 95e59708985f93d508685c66177233775dfe03f5b946626ef4b3c1f66dac1b7b
+    name: face-detector
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/face-detector-0.11.0/face-detector-0.11.0.tgz
+    version: 0.11.0
   - apiVersion: v2
     appVersion: 0.10.0
     created: "2024-01-11T21:56:46.348568742Z"
@@ -125,6 +145,16 @@ entries:
     version: 0.1.0
   nanomq:
   - apiVersion: v2
+    appVersion: 0.4.0
+    created: "2024-01-11T22:01:11.582408233Z"
+    description: A Helm chart for Kubernetes
+    digest: 5ef6f450e9fce4b49a610d0822df4767696b2b29fb17fd60561eaa2954c0cd38
+    name: nanomq
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.4.0/nanomq-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
     appVersion: 0.3.0
     created: "2024-01-11T21:56:46.46952139Z"
     description: A Helm chart for Kubernetes
@@ -144,4 +174,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.2.0/nanomq-0.2.0.tgz
     version: 0.2.0
-generated: "2024-01-11T21:56:46.469567067Z"
+generated: "2024-01-11T22:01:11.582459849Z"
