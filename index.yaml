@@ -245,4 +245,15 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.2.0/nanomq-0.2.0.tgz
     version: 0.2.0
-generated: "2024-01-11T23:33:36.169884867Z"
+  object-filter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-12T00:07:34.038691047Z"
+    description: A Helm chart for Kubernetes
+    digest: 54574bdbc77d5f57522a0e1e38af2c1a47bd0f31dca2b8c3886a91270751c82a
+    name: object-filter
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/object-filter-0.1.0/object-filter-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-01-12T00:07:34.038748494Z"
