@@ -194,7 +194,28 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/face_detector-0.1.0/face_detector-0.1.0.tgz
     version: 0.1.0
+  filter-core:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-22T22:08:39.049816855Z"
+    description: The Plainsight Technologies Core Filter Helm chart for Kubernetes
+    digest: 566b1042a10e494893692f668546ac5aa9103fdeddac908da90e956e7e935fa9
+    name: filter-core
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/filter-core-0.1.0/filter-core-0.1.0.tgz
+    version: 0.1.0
   nanomq:
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2024-01-22T22:08:39.162475371Z"
+    description: A nanomq Helm chart
+    digest: 265bc1d4e3cd40b43ffd4b2a9c9169556336f71528697af50d643c906f882963
+    name: nanomq
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.10.0/nanomq-0.10.0.tgz
+    version: 0.10.0
   - apiVersion: v2
     appVersion: 1.2.0
     created: "2024-01-22T21:08:20.492654693Z"
@@ -296,4 +317,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/object-filter-0.1.0/object-filter-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-22T21:08:20.492748829Z"
+generated: "2024-01-22T22:08:39.162546675Z"
