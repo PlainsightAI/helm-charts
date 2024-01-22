@@ -11,9 +11,17 @@ spec:
       targetPort: 1883
       protocol: TCP
       name: broker
+    - port: 8081
+      targetPort: 8081
+      protocol: TCP
+      name: http    
     - port: 8083
       targetPort: 8083
       protocol: TCP
-      name: http  
+      name: mqtt-socket
+    - port: 8883
+      targetPort: 8883
+      protocol: TCP
+      name: mqtt-ssl        
   selector:
     {{- include "nanomq.selectorLabels" . | nindent 4 }}
