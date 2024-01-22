@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "nanomq.fullname" . }}-config
+data:
+  nanomq.conf: |-
+    mqtt = {
+      max_packet_size = "260MB"
+      max_mqueue_len = 20000000      
+      retry_interval = "10s"        
+      keepalive_multiplier = 1.25 
+      property_size = 32          
+    }

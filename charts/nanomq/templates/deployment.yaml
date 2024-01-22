@@ -20,6 +20,10 @@ spec:
       labels:
         {{- include "nanomq.selectorLabels" . | nindent 8 }}
     spec:
+      volumes:
+      - name: config-volume
+        configMap:
+          name: {{ template "nanomq.fullname" . }}-config
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
@@ -33,6 +37,10 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+          - name: config-volume
+            mountPath: /etc/nanomq.conf
+            subPath: nanomq.conf
           ports:
             - name: broker
               containerPort: 1883
