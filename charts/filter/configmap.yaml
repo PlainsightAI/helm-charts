@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "nanomq.fullname" . }}-config
+data:
+  nanomq.conf: |-
+    [camera]
+    connections = [0]
+    ; connections = [0,1]
+    ; connections = ["rtsp://127.0.0.1:8554/cam1"]
+    ; connections = ["rtsp://127.0.0.1:8554/cam1","rtsp://127.0.0.1:8554/cam2","rtsp://127.0.0.1:8554/cam3"]
+    ; connections = ["cam1","cam2","cam3"]
