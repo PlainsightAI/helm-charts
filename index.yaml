@@ -208,6 +208,16 @@ entries:
   nanomq:
   - apiVersion: v2
     appVersion: 1.2.0
+    created: "2024-01-24T20:29:58.426293781Z"
+    description: A nanomq Helm chart
+    digest: fd29c5c4903826e5053b27c0684baa4fd3d17614f4354b68fdd425a9f57d2437
+    name: nanomq
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.11.0/nanomq-0.11.0.tgz
+    version: 0.11.0
+  - apiVersion: v2
+    appVersion: 1.2.0
     created: "2024-01-22T22:08:39.162475371Z"
     description: A nanomq Helm chart
     digest: 265bc1d4e3cd40b43ffd4b2a9c9169556336f71528697af50d643c906f882963
@@ -317,4 +327,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/object-filter-0.1.0/object-filter-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-22T22:08:39.162546675Z"
+generated: "2024-01-24T20:29:58.426356387Z"
