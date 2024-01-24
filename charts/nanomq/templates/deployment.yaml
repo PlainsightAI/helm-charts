@@ -46,16 +46,14 @@ spec:
               containerPort: 1883
               protocol: TCP
             - name: http
+              containerPort: 8081
+              protocol: TCP
+            - name: mqtt-socket
               containerPort: 8083
-              protocol: TCP        
-          # livenessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
-          # readinessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
+              protocol: TCP       
+            - name: mqtt-ssl
+              containerPort: 8883
+              protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
