@@ -4,6 +4,5 @@ metadata:
   name: {{ template "filter.fullname" . }}-config
 data:
   config.ini: |-
-    [device0]
-    name = {{ .Values.deviceName | default "webcam" }}
+    [{{ .Values.deviceName | default "default" }}]
     source = {{ .Values.deviceSource | default 0 }}

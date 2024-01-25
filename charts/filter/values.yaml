@@ -3,7 +3,7 @@ filterName: filter-blur
 filterVersion: "0.1.0"
 replicaCount: 1
 pullPolicy: Always
-deviceName: cam1
+deviceName: default
 deviceSource: 0
 imagePullSecrets: []
 nameOverride: ""
