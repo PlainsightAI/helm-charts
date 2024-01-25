@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "filter.fullname" . }}-config
+data:
+  config.ini: |-
+    [device0]
+    name = webcam
+    source = 0

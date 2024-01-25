@@ -20,6 +20,10 @@ spec:
       labels:
         {{- include "filter.selectorLabels" . | nindent 8 }}
     spec:
+      volumes:
+      - name: config-volume
+        configMap:
+          name: {{ template "filter.fullname" . }}-config    
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
@@ -28,11 +32,18 @@ spec:
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
+        - env:
+          - name: CONFIG_PATH
+            value: /src/config.ini 
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image }}:{{ .Values.filterVersion}}"
           imagePullPolicy: {{ .Values.pullPolicy }}
+          volumeMounts:
+          - name: config-volume
+            mountPath: /src/config.ini
+            subPath: config.ini
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
