@@ -196,6 +196,15 @@ entries:
     version: 0.1.0
   filter:
   - apiVersion: v2
+    created: "2024-01-25T23:57:07.339708196Z"
+    description: The Plainsight Technologies Core Filter Helm chart for Kubernetes
+    digest: d21b4ed43cf2b0c60213de8e4a07c62325f78b304905520c9d170f9ad56e3bf8
+    name: filter
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/filter-0.10.0/filter-0.10.0.tgz
+    version: 0.10.0
+  - apiVersion: v2
     created: "2024-01-25T22:08:52.42665132Z"
     description: The Plainsight Technologies Core Filter Helm chart for Kubernetes
     digest: 79e0c634af2d21df0401f365fee565f6b470845ab420ab8412c7c411752ff0a4
@@ -270,6 +279,16 @@ entries:
     - https://github.com/PlainsightAI/helm-charts/releases/download/filter-core-0.1.0/filter-core-0.1.0.tgz
     version: 0.1.0
   nanomq:
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2024-01-25T23:57:07.524714674Z"
+    description: A nanomq Helm chart
+    digest: 830d8f133c86eae3e633d82dd267d25d19d8b95f860b2e1b37c6942bb967c710
+    name: nanomq
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/nanomq-0.12.0/nanomq-0.12.0.tgz
+    version: 0.12.0
   - apiVersion: v2
     appVersion: 1.2.0
     created: "2024-01-24T20:29:58.426293781Z"
@@ -394,6 +413,16 @@ entries:
   ui:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-01-25T23:57:07.726118488Z"
+    description: The Plainsight Edge Dashboard Helm Chart
+    digest: 598645c290ac790dc086671ff136c553fa1638de9e93c9a6f238de64c85919c3
+    name: ui
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/ui-0.2.0/ui-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2024-01-24T22:59:27.005381992Z"
     description: The Plainsight Edge Dashboard Helm Chart
     digest: 42a7dd05218aa2343ed254198511c1023c27f760f20279b8161658021f9bfb3b
@@ -402,4 +431,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/ui-0.1.0/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-25T22:08:52.426753338Z"
+generated: "2024-01-25T23:57:07.72624737Z"
