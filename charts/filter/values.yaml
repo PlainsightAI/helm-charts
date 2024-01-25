@@ -1,8 +1,9 @@
-filterName: face_blur
-filterVersion: "latest"
+filterName: filter-blur
+filterVersion: "0.1.0"
 replicaCount: 1
-image: sixgill/face_blur
 pullPolicy: Always
+deviceName: cam1
+deviceSource: 0
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

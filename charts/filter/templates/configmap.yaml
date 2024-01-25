@@ -5,5 +5,5 @@ metadata:
 data:
   config.ini: |-
     [device0]
-    name = webcam
-    source = 0
+    name = {{ .Values.deviceName | default "webcam" }}
+    source = {{ .Values.deviceSource | default 0 }}
