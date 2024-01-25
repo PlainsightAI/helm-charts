@@ -196,6 +196,15 @@ entries:
     version: 0.1.0
   filter:
   - apiVersion: v2
+    created: "2024-01-25T16:48:00.940456359Z"
+    description: The Plainsight Technologies Core Filter Helm chart for Kubernetes
+    digest: fedb4ce21de65498a45adf2ad2547e16d84bd332b3ca387bce303cda28364553
+    name: filter
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/filter-0.8.0/filter-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v2
     created: "2024-01-25T15:55:50.650954488Z"
     description: The Plainsight Technologies Core Filter Helm chart for Kubernetes
     digest: b40ef1163b623dd7207026dc9567d13f0f85ba3538aef0939fa16268c32f67f8
@@ -384,4 +393,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/ui-0.1.0/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-25T15:55:50.65103045Z"
+generated: "2024-01-25T16:48:00.940546507Z"
