@@ -1,5 +1,5 @@
-name: filter-blur
-version: "0.1.0"
+filterName: filter-blur
+filterVersion: "0.1.0"
 replicaCount: 1
 pullPolicy: Always
 deviceName: cam1
