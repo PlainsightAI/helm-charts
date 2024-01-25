@@ -38,7 +38,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "sixgill/{{ .Values.filterName }}:{{ .Values.filterVersion}}"
+          image: "sixgill/{{ .Values.name }}:{{ .Values.version}}"
           imagePullPolicy: {{ .Values.pullPolicy }}
           volumeMounts:
           - name: config-volume
