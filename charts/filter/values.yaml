@@ -1,3 +1,4 @@
+filterRepo: "sixgill/"
 filterName: filter-blur
 filterVersion: "0.1.0"
 replicaCount: 1

@@ -32,14 +32,14 @@ spec:
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
-        - env:
-          - name: CONFIG_PATH
-            value: /src/config.ini 
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "sixgill/{{ .Values.filterName }}:{{ .Values.filterVersion}}"
+          image: {{ .Values.filterRepo }}{{ .Values.filterName }}:{{ .Values.filterVersion}}
           imagePullPolicy: {{ .Values.pullPolicy }}
+          env:
+            - name: CONFIG_PATH
+              value: /src/config.ini           
           volumeMounts:
           - name: config-volume
             mountPath: /src/config.ini
