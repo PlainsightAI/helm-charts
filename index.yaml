@@ -194,6 +194,16 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/face_detector-0.1.0/face_detector-0.1.0.tgz
     version: 0.1.0
+  filter:
+  - apiVersion: v2
+    created: "2024-01-25T00:18:20.628948572Z"
+    description: The Plainsight Technologies Core Filter Helm chart for Kubernetes
+    digest: 80292c9737844bfbb40384f3657f35a7defc89e348e48335c4b392371922ca61
+    name: filter
+    type: application
+    urls:
+    - https://github.com/PlainsightAI/helm-charts/releases/download/filter-0.3.0/filter-0.3.0.tgz
+    version: 0.3.0
   filter-core:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -338,4 +348,4 @@ entries:
     urls:
     - https://github.com/PlainsightAI/helm-charts/releases/download/ui-0.1.0/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-24T22:59:27.005552239Z"
+generated: "2024-01-25T00:18:20.62903339Z"
