@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: {{ include "filter.fullname" . }}
   labels:
-    plainsight.ai/filter: true
     {{- include "filter.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
@@ -24,7 +23,10 @@ spec:
       volumes:
       - name: config-volume
         configMap:
-          name: {{ template "filter.fullname" . }}-config    
+          name: {{ template "filter.fullname" . }}-config
+      - name: dev-video0
+        hostPath:
+          path: /dev/video0          
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
@@ -45,6 +47,8 @@ spec:
           - name: config-volume
             mountPath: /src/config.ini
             subPath: config.ini
+          - mountPath: /dev/video0
+            name: dev-video0            
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
