@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{ include "filter.fullname" . }}
   labels:
-    "plainsight.ai/filter": "true"
+    plainsight.ai/filter: true
     {{- include "filter.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
