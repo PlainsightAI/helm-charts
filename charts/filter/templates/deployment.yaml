@@ -27,6 +27,9 @@ spec:
       - name: dev-video0
         hostPath:
           path: /dev/video0          
+      - name: dev-video1
+        hostPath:
+          path: /dev/video1
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
@@ -48,7 +51,9 @@ spec:
             mountPath: /src/config.ini
             subPath: config.ini
           - mountPath: /dev/video0
-            name: dev-video0            
+            name: dev-video0
+          - mountPath: /dev/video1
+            name: dev-video1
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
