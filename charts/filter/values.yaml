@@ -8,6 +8,10 @@ deviceSource: 0
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+gpu:
+  enabled: false
+  runtimeClassName: "nvidia"
+
 serviceAccount:
   create: true
 
@@ -42,7 +46,7 @@ ingress:
     kubernetes.io/ingress.class: "traefik"
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: nanomq.filterbox.local
+    - host: filter.filterbox.local
       paths:
         - path: /
           pathType: Prefix
@@ -55,6 +59,7 @@ resources: {}
   # limits:
   #   cpu: 2000m
   #   memory: 2048Gi
+  #   nvidia.com/gpu: 1
   # requests:
   #   cpu: 1000m
   #   memory: 1024Mi
