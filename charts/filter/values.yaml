@@ -1,3 +1,4 @@
+imageOverride: ""
 filterRepo: "sixgill/"
 filterName: filter-blur
 filterVersion: "0.1.0"

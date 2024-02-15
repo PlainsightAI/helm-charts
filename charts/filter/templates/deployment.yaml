@@ -44,7 +44,11 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
+          {{- if .Values.imageOverride }}
+          image: {{ .Values.imageOverride }}
+          {{- else }}
           image: {{ .Values.filterRepo }}{{ .Values.filterName }}:{{ .Values.filterVersion}}
+          {{- end }}          
           imagePullPolicy: {{ .Values.pullPolicy }}
           env:
             - name: CONFIG_PATH
