@@ -39,11 +39,11 @@ spec:
       runtimeClassName: {{ .Values.gpu.runtimeClassName }}
       {{- end }}      
       securityContext:
-        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+        {{- toYaml .Values.securityContext | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
+            {{- toYaml .Values.podSecurityContext | nindent 12 }}
           {{- if .Values.imageOverride }}
           image: {{ .Values.imageOverride }}
           {{- else }}
